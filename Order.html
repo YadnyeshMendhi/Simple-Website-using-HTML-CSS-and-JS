@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderPage</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Order.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+    
+
+
+    <div class="container2">
+        <h1>Order Page</h1>
+
+        <label class="switch">
+            <span class="tooltipText">Dark Mode</span>
+            <input type="checkbox" onclick="myFunction()">
+            <span class="slider"></span>
+        </label>
+
+        <hr>
+        <br>
+        
+        <div class="product">
+            <span>Product Name</span>
+            <input list="TvNames" name="Tv names" id="product1" value=" " required>
+            <datalist id="TvNames">
+                <option value="Xiaomi Smart TV X Pro 1.08m (43)">
+                <option value="Xiaomi Smart TV 5A Pro 32 (80 Cm)">
+                <option value="Redmi Smart TV X50 125.7 cm (50 inches)">
+                <option value="Xiaomi Smart TV 5A 80 cm (32 inch)">
+                <option value="Xiaomi Smart TV X43 (108 cm)">
+              </datalist>
+        </div>
+        <div class="product">
+            <span>Product Price</span>
+            <input type="number" id="product2" value="0" required>
+        </div>
+        <div class="product">
+            <span>Product Quantity</span>
+            <input type="number" id="product3" value="0" required>
+        </div>
+
+        <div class="product">
+            <span>User Address</span>
+            <input type="text" id="address" value=" " required>
+        </div>
+            <button type="button" onclick="CalculateTotal()" class="btn btn-warning">Proceed to Buy</button>
+            <br><br>
+            <p style="background-color: darkgrey;font-family: sans-serif;padding: 10px;color: black;">Total Price:₹<span id="total">0</span></p>
+
+            
+            <button type="button" onclick="getAddress()" class="btn btn-info">Deliver to this address</button>
+            <br><br>
+            <p style="background-color: darkgrey;font-family: sans-serif;padding: 10px;color: black;">Address:<span id="Adressid"><b></b></span></p>
+        </div>
+
+    <script src="App.js"></script>
+</body>
+</html>

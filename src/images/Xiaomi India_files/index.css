@@ -1,0 +1,37 @@
+@import url('https://i03.appmifile.com/i18n/fonts/CamphorPro/vf/index.css');
+@import url('https://i03.appmifile.com/i18n/fonts/CamphorPro/woff2/index.css');
+
+@font-face {
+  font-family: 'Xiaomi Brand';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://i03.appmifile.com/i18n/fonts/Brand/Brand.woff2') format('woff2');
+}
+
+body {
+  font-family: 'Camphor Pro', sans-serif;
+}
+
+body .mi-brand {
+  font-family: 'Xiaomi Brand', 'Camphor Pro', sans-serif;
+}
+
+body .mi-brand.mi-brand--xiaomi,
+body .mi-brand.mi-brand--poco {
+  font-weight: bold !important;
+}
+
+body .mi-brand.mi-brand--redmi {
+  font-weight: normal !important;
+}
+
+@supports (font-variation-settings: 'wght' 400) {
+  body {
+    font-family: 'Camphor Pro VF', 'Camphor Pro', sans-serif;
+  }
+
+  body .mi-brand {
+    font-family: 'Xiaomi Brand', 'Camphor Pro VF', 'Camphor Pro', sans-serif;
+  }
+}

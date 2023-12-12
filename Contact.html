@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Order.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <a href="Home.html" class="logo"><i class="fa-solid fa-shop">&nbsp;Shopyfy</i></a>
+            <!----<div class="tooltip">Hover Over me
+                <span class="tooltipText">Dark Mode</span>
+            </div>-->
+             <div class="header-left">
+                <label class="switch">
+                    <span class="tooltipText">Dark Mode</span>
+                    <input type="checkbox" onclick="myFunction()">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="header-right">
+                <a href="Home.html" class="active">Home</a>
+                <a href="Product.html" class="active">Product</a>
+                <a href="Contact.html" class="active">Contact</a>
+                <a href="About.html" class="active">About</a>
+            </div>
+    </div>
+
+
+
+    <h3 class="Help" style="background-color:rgb(30, 73, 138);color: white;">HELP CENTER</h3>
+    <p class="help">We are here to help you</p>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-outline-success" ><a href="Order.html">Orders</a></button>
+    </div>
+    
+    
+    <hr>
+    <br>
+
+    <label for="queryType" class="queryType"><b>SELECT YOUR QUERY TYPE : </b></label>
+    <select name="queryType" id="">
+        <option value="">Order related queries</option>
+        <option value="">Non-Order related issues</option>
+        <option value="">Recent Issues</option>
+    </select>
+
+    <hr>
+    <br><br>
+
+    <h3 class="queryType">Frequently Asked Questions</h3>
+
+    <hr>
+    <br>
+
+
+
+    <!--Accordian Addeed from w3schools-->
+    <button class="accordion">Why are there different prices for the same product? Is it legal?</button>
+    <div class="panel">
+      <p>Shopyfy is an online marketplace platform that enables independent sellers to sell their products to buyers. The prices are solely decided by the sellers, and Shopyfy does not interfere in the same. There could be a possibility that the same product is sold by different sellers at different prices. Shopyfy rightfully fulfils all legal compliances of onboarding multiple sellers on its forum as it is a marketplace platform.</p>
+    </div>
+    
+    <button class="accordion">Why will 'My Cashback' not be available on Shopyfy?</button>
+    <div class="panel">
+      <p>To make your shopping experience easier and simpler, 'My Cashback' will be replaced by PhonePe. PhonePe wallet can be used on Shopyfy and other PhonePe partners. To use your PhonePe balance, you will have to activate/verify your PhonePe account.</p>
+    </div>
+    
+    <button class="accordion">How do I cancel the order, I have placed?</button>
+    <div class="panel">
+      <p>Order can be canceled till the same is out for delivery. 
+        <h4></h4>Note: This may not be applicable for certain logistics partner. You would see an option to cancel within 'My Orders' section under the main menu of your App/Website/M-site then select the item or order you want to cancel. In case you are unable to cancel the order from'My Orders' section, you can refuse it at the time of delivery and refund will be processed into the source account, if order amount was paid online.</p>
+    </div>
+
+    <br><br><br>
+    
+
+
+
+
+
+
+
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Online Shopping</h4>
+                    <ul>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Kids</li>
+                        <li>Home Living</li>
+                        <li>Beauty</li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Policies</h4>
+                    <ul>
+                        <li>Contact US</li>
+                        <li>FAQ</li>
+                        <li>T&C</li>
+                        <li>Terms of use</li>
+                        <li>Track Orders</li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/"  class="fb"><i class="fab fa-facebook-f">&nbsp;Facebook</i></a></li>
+                        <br>
+                        <li><a href="https://www.instagram.com/"  class="fb"><i class="fa-brands fa-instagram">&nbsp;Instagram</i></a></li>
+                        <br>
+                        <li><a href="https://www.whatsapp.com/"  class="fb"><i class="fa-brands fa-whatsapp">&nbsp;Whatsapp</i></a></li> 
+                        <br>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="App.js"></script>
+</body>
+</html>
